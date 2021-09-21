@@ -15,7 +15,7 @@ class EmployeeController extends Controller
     {
         $this->employeeRepo = new EmployeeRepository();
     }
-   
+   // fetching data from employee repository
     public function index()
     {
         return $this->employeeRepo->fetch();
