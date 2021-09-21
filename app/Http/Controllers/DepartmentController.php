@@ -13,10 +13,10 @@ class DepartmentController extends Controller
     {
         $this->departmentRepo = new DepartmentRepository();
     }
-
+//fetching data from department repository
     public function index()
     {
-        return $this->departmentRepo->fetch();
+        return $this->departmentRepo->fetch(); 
     }
 
     public function details(Request $request)
